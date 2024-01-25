@@ -1,5 +1,3 @@
 # Dockerfile
-FROM base-image
-
-ARG GIT_COMMIT
-LABEL git-commit=$GIT_COMMIT
+FROM alpine
+RUN apk update && apk add wget curl
